@@ -1,0 +1,67 @@
+\documentclass{article}
+\title{Prices and Inflation}
+\author{Robert Lowe}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fullpage}
+\usepackage{cancel}
+
+\begin{document}
+\maketitle
+\setlength{\jot}{12pt}
+
+\section*{Economics of Inflation}
+\begin{itemize}
+\item {\bf Demand Pull Inflation} - Increase in prices due to increased demand. Four main causes:
+    \begin{enumerate}
+        \item Increase in Population (More people buy more things.)
+        \item Increase in the money supply via economic stimulus.
+        \item Decrease in production of some set of goods.
+        \item Growing economic activity, especially in consumption and exports.
+    \end{enumerate}
+\item {\bf Cost Push Inflation} - Increase of prices to protect profit margins. This is a more complex form of inflation, but some causes are:
+    \begin{enumerate}
+        \item This can be caused by inflation itself.  Rising costs of goods yields rising costs of employees and production.
+        \item Increase in the price in some essential good (such as oil).
+    \end{enumerate}
+    \item Generally, inflation is an indication of a growing and healthy economy, but too much can be bad.  Why?
+    \item Generally, 2\% -- 4\% is the target.  Above that prices grow uncontrollably, and below that the economy would be stagnant.
+    \item The history of a country is reflected in its inflation rate!
+    \item The rate of inflation can be computed by measuring the percent change in the CPI between two years.  This is given by the following proportion:
+    \[
+    \mathrm{(CPI\ B-CPI\ A):CPI\ A :: Inflation : 100}
+    \]
+    We can solve this proportion for Inflation to derive a handy formula:
+    
+    \begin{align*}
+        \mathrm{CPI\ A \times Inflation} &= \mathrm{(CPI\ B-CPI\ A)} \times 100\\
+        \dfrac{\mathrm{CPI\ A \times Inflation}}{\mathrm{CPI\ A}} &= \dfrac{\mathrm{(CPI\ B-CPI\ A) \times 100}}{\mathrm{CPI\ A}}\\
+        \dfrac{\mathrm{\cancel{CPI\ B} \times Inflation}}{\mathrm{\cancel{CPI\ A}}} &= \dfrac{\mathrm{(CPI\ B-CPI\ A) \times 100}}{\mathrm{CPI\ A}}\\
+        \mathrm{Inflation} &= \dfrac{\mathrm{(CPI\ B-CPI\ A) \times 100}}{\mathrm{CPI\ A}}\\
+        \Aboxed{\mathrm{Inflation} &= \dfrac{\mathrm{(CPI\ B-CPI\ A)}}{\mathrm{CPI\ A}}\times 100}
+    \end{align*}
+    \item {\bf Class Exercise} Identify years major events in US history occurred.  Are these reflected in the rate of inflation as computed from the CPI chart?  Which periods seemed to show the most economic growth? Were there any periods where the economy shrank? How does this line up with the historical context in which they occur?
+\end{itemize}
+
+\section*{Calculating Prices}
+\begin{itemize}
+    \item Recall that the price of an item in two years is assumed to be in proportion to the CPIs of those years.
+    \[
+    \mathrm{Price\ A : Price\ B :: CPI\ A : CPI\ B}
+    \]
+    \item If we assume a standard of saying that year A is the year for which we know the price, and that the price in year B is consistently our unknown, we can derive a formula for computing a price in year B given the year A price and the CPIs of both years.
+    \begin{align*}
+    \mathrm{Price\ B \times CPI\ A} &= \mathrm{Price\ A \times CPI\ B}\\
+    \dfrac{\mathrm{Price\ B \times CPI\ A}}{\mathrm{CPI\ A}} &= \dfrac{\mathrm{Price\ A \times CPI\ B}}{\mathrm{CPI\ A}}\\
+    \dfrac{\mathrm{Price\ B \times \cancel{CPI\ A}}}{\mathrm{\cancel{CPI\ A}}} &= \dfrac{\mathrm{Price\ A\times CPI\ B}}{\mathrm{CPI\ A}}\\
+    \Aboxed{\mathrm{Price\ B} &= \dfrac{\mathrm{CPI\ B}}{\mathrm{CPI\ A}} \times \mathrm{Price\ A}}
+    \end{align*}
+\item {\bf Class Exercise} For each of the following goods, find prices in 1975, 1985, 1995, and 2018.  Compute the rate of inflation in each time period.  Compute the percent change in each good.  Did these goods keep pace with inflation.  Why do you think that is?
+    \begin{itemize}
+        \item Scientific Calculator
+        \item 1 Gallon of Gasoline
+        \item Ford Mustang
+        \item 1 pound of Ground Chuck
+    \end{itemize}
+\end{itemize}
+\end{document}

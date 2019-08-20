@@ -1,0 +1,72 @@
+\documentclass{article}
+\title{Linear Growth}
+\date{February 20, 2019}
+\usepackage{amsmath}
+
+\begin{document}
+\maketitle
+\section*{Explanatory and Response Variables}
+\begin{itemize}
+	\item Oftentimes, we study a system based on its inputs and its outputs.
+	\item An {\bf explanatory} variable is a variable which explains some effect.
+	\item A {\bf response} variable is a variable which quantifies a response.
+	\item We typically want to model how a a response variable changes when the explanatory variable change.
+	\item We use the predict future behavior of something under study.
+\end{itemize}
+
+\section*{Linear Patterns}
+\begin{itemize}
+	\item To explore and model data, we look for patterns.
+	\item A linear pattern is one where the ratio of the change in the response variable to the change in the explanatory variable remains constant.
+	\item Suppose we have response variable $y$ and explanatory variable $x$.  If we pick 
+	two entries $(x_1, y_1)$ and $(x_2, y_2)$, then for all pairs of values, the ratio must remain the same:
+	\[
+	m = \dfrac{y_2 - y_1}{x_2-x_1}
+	\]
+	\item For example, are the following patterns linear?\newline
+	\begin{tabular}{|r|r|}
+		\hline
+		$x$ & $y$ \\
+		\hline
+		1 & 20\\
+		2 & 25\\
+		4 & 35\\
+		6 & 45\\
+		\hline
+	\end{tabular}
+	\begin{tabular}{|r|r|}
+		\hline
+		$x$ & $y$ \\
+		\hline
+		1 & 20\\
+		2 & 25\\
+		4 & 39\\
+		6 & 61\\
+		\hline
+	\end{tabular}
+\end{itemize}
+
+\section*{Recursive Relationship}
+\begin{itemize}
+	\item A linear pattern can be written as a recursive relationship.  The relationship is the sum of the previous value and then the constant change in the response variable. 
+	\item This can be written as follows:
+	\[
+	P_n = P_{n-1} + (y_2 - y_1)
+	\]
+	\item Example:  Write the previous linear pattern as a recursive relationship.
+	\item Recursive relationships work well for conceptualizing how the pattern changes from one value to the next, but it is not very good for projecting future values.  (Discuss: Why?)
+\end{itemize}
+
+\section*{Explicit Linear Functions}
+\begin{itemize}
+	\item A linear growth pattern can be characterized as a linear function.
+	\item One of the most common ways to write a linear function is in {\bf slope-intercept} form.  This form looks like this:
+	\[
+	f(x) = \mathrm{m} x + \mathrm{b}
+	\]
+	\item Here, $\mathrm{m}$ is the constant ratio of change (the slope)
+	\item $\mathrm{b}$ is the value of the function when $x=0$.  This is called the ``y-intercept'' because this is the value of the function when it crosses the $y$ access.
+	\item Example: Find a linear function for the linear pattern in the previous example.
+	\item Example: Graph this function for $x$ values 1 through 10.
+\end{itemize}
+\end{document}
