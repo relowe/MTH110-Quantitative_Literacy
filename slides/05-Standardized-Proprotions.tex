@@ -1,0 +1,236 @@
+\documentclass[]{beamer}
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  \definecolor{mcgarnet}{rgb}{0.38, 0, 0.08}
+  \definecolor{mcgray}{rgb}{0.6, 0.6, 0.6}
+  \setbeamercolor{structure}{fg=mcgarnet,bg=mcgray}
+  %\setbeamercovered{transparent}
+}
+
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\newcommand{\imagesource}[1]{{\centering\hfill\break\hbox{\scriptsize Image Source:\thinspace{\small\itshape #1}}\par}}
+
+\title{05 - Standardized Proportions}
+
+
+\author{Dr. Robert Lowe\\}
+
+\institute[Maryville College] % (optional, but mostly needed)
+{
+  Division of Mathematics and Computer Science\\
+  Maryville College
+}
+
+\date[]{}
+\subject{}
+
+\pgfdeclareimage[height=0.5cm]{university-logo}{images/Maryville-College}
+\logo{\pgfuseimage{university-logo}}
+
+
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+
+% Structuring a talk is a difficult task and the following structure
+% may not be suitable. Here are some rules that apply for this
+% solution: 
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+% - A conference audience is likely to know very little of what you
+%   are going to talk about. So *simplify*!
+% - In a 20min talk, getting the main ideas across is hard
+%   enough. Leave out details, even if it means being less precise than
+%   you think necessary.
+% - If you omit details that are vital to the proof/implementation,
+%   just say so once. Everybody will be happy with that.
+\section{Percentage Terms and Notation}
+
+\begin{frame}{Terms}
+\[
+\mathrm{percentage} : \mathrm{base} :: \mathrm{rate} : 100
+\]
+\begin{itemize}[<+->]
+    \item Percent is a standardize proportion where a ratio between percentage and base is related to parts of 100. (Literally the same as saying ``$x$ out of 100'')
+    \item The {\bf percentage} is the part of a number computed by the rate.
+    \item The {\bf base} is the number on which the percentage is computed.  (This can often be thought of as the total amount, original amount, or total population in most problems.)
+    \item The {\bf rate}, also referred to as the percent, is the parts out of 100 to be taken from the base. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Terms}
+\[
+\mathrm{percentage} : \mathrm{base} :: \mathrm{rate} : 100
+\]
+\begin{itemize}[<+->]
+    \item {\bf Amount} is the sum obtained by adding the percentage to the base.
+    \item {\bf Difference} is the remainder obtained by subtracting the percentage from the base.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Notation}
+A percent may be written as:
+\begin{itemize}[<+(1)->]
+  \item A ratio $25 : 100$ or $1:4$.
+  \item A fraction $\dfrac{25}{100}$ or $\dfrac{1}{4}$
+  \item A decimal $0.25$
+  \item Using the $\%$ sign $25\%$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Problem Notation}
+Frequently, a problem can be searched for keywords.  For example: ``What {\bf is} $25\%$ {\bf of} 200?''.
+\begin{itemize}[<+(1)->]
+  \item The ``is'' portion corresponds to the percentage.
+  \item The ``of'' portion corresponds to the base.
+  \item We could rewrite the fraction's proportion as the following mnemonic
+  \[
+  \mathrm{is} : \mathrm{of} :: \mathrm{percent} : 100
+  \]
+  \item Exercise: Rewrite this mnemonic proportion in fraction form.
+\end{itemize}
+\end{frame}
+
+\section{Percentage Calculations}
+\begin{frame}{Finding Parts of the Percent Proportion}
+
+To find any part of a percent, simply set up the proportion and solve.
+\begin{enumerate}[<+->]
+    \item What is $25\%$ of $300$?
+        \begin{enumerate}
+            \item \textcolor{green}{$ x:300 :: 25:100$}
+            \item \textcolor{green}{$100x = 300 \times 25$}
+            \item \textcolor{green}{$100x = 7500$}
+            \item \textcolor{green}{$x = 75$}
+        \end{enumerate}
+    \item $120$ is $30\%$ of what number?
+        \begin{enumerate}
+            \item \textcolor{green}{$120:x :: 30 : 100 $}
+            \item \textcolor{green}{$30x = 100 \times 120 $}
+            \item \textcolor{green}{$30x = 12000 $}
+            \item \textcolor{green}{$ x = 400 $}
+        \end{enumerate}
+    \item What percent of $400$ is $50$?
+        \begin{enumerate}
+            \item \textcolor{green}{$50 : 400 :: x : 100$}
+            \item \textcolor{green}{$400x = 50 \times 100 $}
+            \item \textcolor{green}{$400x = 5000 $}
+            \item \textcolor{green}{$x=12.5\%$}
+        \end{enumerate}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Amounts and Differences}
+
+    In problems dealing with amounts and differences, the base and percentage are used in the sum or difference.
+    \begin{enumerate}[<+->]
+        \item A store sells shirts for $\$15.00$ apiece. If they have
+            a $20\%$ off sale, what is the price of the shirts?
+            \begin{enumerate}
+                \item \textcolor{green}{$\mathrm{amount} = \mathrm{base} - \mathrm{percentage} $}
+                \item \textcolor{green}{$x : 15.00 :: 20 : 100 $}
+                \item \textcolor{green}{$100x = 300.00 $}
+                \item \textcolor{green}{$x = 3.00 $}
+                \item \textcolor{green}{$\mathrm{amount} = \$15.00 - \$3.00$}
+                \item \textcolor{green}{$\mathrm{amount} = \$12.00$}
+            \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Amount and Difference (ctd.)}
+    \begin{enumerate}[<+->][2]
+        \item A merchant purchases rugs for $\$10.00$ apiece and sells
+            them for $\$15.00$.  What percent markup has the merchant
+            applied?
+        \begin{enumerate}
+            \item \textcolor{green}{$\mathrm{difference} = \mathrm{amount} - \mathrm{base} $}
+            \item \textcolor{green}{$\mathrm{difference} = \$15.00 - \$10.00 $}
+            \item \textcolor{green}{$\mathrm{difference} = \$5.00 $}
+            \item \textcolor{green}{$ 5 : 10 :: x : 100 $}
+            \item \textcolor{green}{$10x = 5 \times 100 $}
+            \item \textcolor{green}{$10x = 500 $}
+            \item \textcolor{green}{$x = 50\% $}
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Amount and Difference (ctd.)}
+    \begin{enumerate}[<+->]
+        \item According to {\tt worldometers.info}, the United States
+        population increases by $0.71\%$ each year.  If the present
+        population of the United States is $3.28 \times 10^{8}$
+        people, what will the population be next year?
+
+        \begin{enumerate}
+            \item \textcolor{green}{$\mathrm{amount} = \mathrm{base} + \mathrm{percentage} $}
+            \item \textcolor{green}{$x : 3.28\times 10^8 :: 0.71 : 100 $}
+            \item \textcolor{green}{$100x = 3.28\times 10^8 \times 0.71 $}
+            \item \textcolor{green}{$100x = 2.33\times 10^8  $}
+            \item \textcolor{green}{$x = 2.33\times 10^6 $}
+            \item \textcolor{green}{$\mathrm{amount} = 3.28 \times 10^8 + 2.33 \times 10^6$}
+            \item \textcolor{green}{$\mathrm{amount} = 3.30\times 10^8 $}
+        \end{enumerate}
+    \end{enumerate}
+\end{frame}
+
+\section{Percentage and Proportion Problems}
+
+\begin{frame}{Problem 2}
+
+  If 8 workers in 24 days working 10 hours a day can reap 48 acres of wheat, how many acres could 12 workers reap in 20 days of 12 hours each?
+
+\end{frame}
+
+\begin{frame}{Problem 3}
+
+  If a staff of $4\mathrm{ft}$ casts a shadow $7\mathrm{ft}$ in length, what is the height of a tower which casts a shadow of $198\mathrm{ft}$ at the same time? 
+
+\end{frame}
+
+\begin{frame}{Problem 4}
+
+  A homeowner sells their house at a loss of $20\%$.  If the selling price was 
+  $\$60,000.00$, what was the original price of the home?
+
+\end{frame}
+
+\begin{frame}{Problem 5}
+
+  In the erection of a house I paid twice as much for material
+  as for labor.  Had I paid $6\%$ more for material, and $9\%$ more
+  for labor, my house would have cost $\$1284.00$; what was its
+  cost?
+\end{frame}
+
+\end{document}
+
+
