@@ -1,0 +1,137 @@
+\documentclass[]{beamer}
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  \definecolor{mcgarnet}{rgb}{0.38, 0, 0.08}
+  \definecolor{mcgray}{rgb}{0.6, 0.6, 0.6}
+  \setbeamercolor{structure}{fg=mcgarnet,bg=mcgray}
+  %\setbeamercovered{transparent}
+}
+
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\newcommand{\imagesource}[1]{{\centering\hfill\break\hbox{\scriptsize Image Source:\thinspace{\small\itshape #1}}\par}}
+
+\title{06 - Proportions and Change}
+
+
+\author{Dr. Robert Lowe\\}
+
+\institute[Maryville College] % (optional, but mostly needed)
+{
+  Division of Mathematics and Computer Science\\
+  Maryville College
+}
+
+\date[]{}
+\subject{}
+
+\pgfdeclareimage[height=0.5cm]{university-logo}{images/Maryville-College}
+\logo{\pgfuseimage{university-logo}}
+
+
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+
+% Structuring a talk is a difficult task and the following structure
+% may not be suitable. Here are some rules that apply for this
+% solution: 
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+% - A conference audience is likely to know very little of what you
+%   are going to talk about. So *simplify*!
+% - In a 20min talk, getting the main ideas across is hard
+%   enough. Leave out details, even if it means being less precise than
+%   you think necessary.
+% - If you omit details that are vital to the proof/implementation,
+%   just say so once. Everybody will be happy with that.
+
+\section{Change According to Proportions and Percents}
+\begin{frame}{Direct Proportions}
+\begin{itemize}[<+->]
+    \item When something increases by a proportion, this is called a direct proportion.
+    \item Suppose we have a proportion $a:b :: c:d$.  If an increase in $a$ causes a proportional increase in $c$, then $a:b :: c:d$ is a direct proportion.  
+    \item You must read the nature of a problem to know whether it is increasing and therefore a direct proportion.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Inverse Proportions}
+\begin{itemize}[<+->]
+    \item When something decreases by a proportion, this is called an inverse proportion.
+    \item Using the letters $a$, $b$, $c$, and $d$ from the previous problem, if an increase in $a$ causes a decrease in $c$, then the corresponding inverse proportion is $a:b :: d:c$.
+    \item You must read the nature of a problem to know whether it is decreasing and therefore an inverse proportion.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Increasing, Amount, and Markup}
+
+    Recall the term amount.  
+    
+    \[
+        \mathrm{amount} = \mathrm{base} + \mathrm{percentage}
+    \]
+\end{frame}
+
+\begin{frame}{Decreasing, Difference, Discount}
+
+Recall the term difference.  
+\[
+    \mathrm{difference} = \mathrm{base} - \mathrm{percentage}
+\]
+\end{frame}
+
+
+\section{Percentage and Proportion Problems}
+
+\begin{frame}{Problem 3}
+
+  If a staff of $4\mathrm{ft}$ casts a shadow $7\mathrm{ft}$ in length, what is the height of a tower which casts a shadow of $198\mathrm{ft}$ at the same time? 
+
+\end{frame}
+
+\begin{frame}{Problem 4}
+
+  A homeowner sells their house at a loss of $20\%$.  If the selling price was 
+  $\$60,000.00$, what was the original price of the home?
+
+\end{frame}
+
+\begin{frame}{Problem 5}
+
+  In the erection of a house I paid twice as much for material
+  as for labor.  Had I paid $6\%$ more for material, and $9\%$ more
+  for labor, my house would have cost $\$1284.00$; what was its
+  cost?
+\end{frame}
+
+
+\end{document}
+
+
