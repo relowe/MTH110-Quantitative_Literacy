@@ -1,0 +1,173 @@
+\documentclass[]{beamer}
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  \definecolor{mcgarnet}{rgb}{0.38, 0, 0.08}
+  \definecolor{mcgray}{rgb}{0.6, 0.6, 0.6}
+  \setbeamercolor{structure}{fg=mcgarnet,bg=mcgray}
+  %\setbeamercovered{transparent}
+}
+
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{mathtools}
+
+\newcommand{\imagesource}[1]{{\centering\hfill\break\hbox{\scriptsize Image Source:\thinspace{\small\itshape #1}}\par}}
+
+\title{Inflation and Prices}
+
+
+\author{Dr. Robert Lowe\\}
+
+\institute[Maryville College] % (optional, but mostly needed)
+{
+  Division of Mathematics and Computer Science\\
+  Maryville College
+}
+
+\date[]{}
+\subject{}
+
+\pgfdeclareimage[height=0.5cm]{university-logo}{images/Maryville-College}
+\logo{\pgfuseimage{university-logo}}
+
+
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+
+% Structuring a talk is a difficult task and the following structure
+% may not be suitable. Here are some rules that apply for this
+% solution: 
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+% - A conference audience is likely to know very little of what you
+%   are going to talk about. So *simplify*!
+% - In a 20min talk, getting the main ideas across is hard
+%   enough. Leave out details, even if it means being less precise than
+%   you think necessary.
+% - If you omit details that are vital to the proof/implementation,
+%   just say so once. Everybody will be happy with that.
+
+\section{Economics of Inflation}
+
+\begin{frame}{Demand Pull Inflation}
+    \par\textbf{Demand Pull Inflation} - Increase in prices due to increased demand. Four main causes:
+    \begin{enumerate}[<+(1)->]
+        \item Increase in Population (More people buy more things.)
+        \item Increase in the money supply via economic stimulus.
+        \item Decrease in production of some set of goods.
+        \item Growing economic activity, especially in consumption and exports.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Cost Push Inflation}
+    \par\textbf{Cost Push Inflation} - Increase of prices to protect profit margins. This is a more complex form of inflation, but some causes are:
+    \begin{enumerate}[<+(1)->]
+        \item This can be caused by inflation itself.  Rising costs of goods yields rising costs of employees and production.
+        \item Increase in the price in some essential good (such as oil).
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{Facts About Inflation}
+    \begin{itemize}[<+->]
+        \item Generally, inflation is an indication of a growing and healthy economy, but too much can be bad.  Why?
+        \item Generally, 2\% -- 4\% is the target.  Above that prices grow uncontrollably, and below that the economy would be stagnant.
+        \item The history of a country is reflected in its inflation rate!
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Rate of Inflation}
+    \par The rate of inflation can be computed by measuring the percent change in the CPI between two years.  This is given by the following proportion:
+    \[
+    \mathrm{(CPI\ B-CPI\ A):CPI\ A :: Inflation : 100}
+    \]
+\end{frame}
+
+\begin{frame}{Rate of Inflation Formula}
+    We can solve this proportion for Inflation to derive a handy formula:
+    \begin{align*}
+        \mathrm{(CPI\ B-CPI\ A):CPI\ A}&\mathrm{:: Inflation : 100}\\
+        \uncover<+(1)->{\mathrm{CPI\ A \times Inflation} &= \mathrm{(CPI\ B-CPI\ A)} \times 100\\}
+        \uncover<+(1)->{\dfrac{\mathrm{CPI\ A \times Inflation}}{\mathrm{CPI\ A}} &= \dfrac{\mathrm{(CPI\ B-CPI\ A) \times 100}}{\mathrm{CPI\ A}}\\}
+        \uncover<+(1)->{\dfrac{\mathrm{\cancel{CPI\ B} \times Inflation}}{\mathrm{\cancel{CPI\ A}}} &= \dfrac{\mathrm{(CPI\ B-CPI\ A) \times 100}}{\mathrm{CPI\ A}}\\}
+        \uncover<+(1)->{\mathrm{Inflation} &= \dfrac{\mathrm{(CPI\ B-CPI\ A) \times 100}}{\mathrm{CPI\ A}}\\}
+        \uncover<+(1)->{\Aboxed{\mathrm{Inflation} &= \dfrac{\mathrm{(CPI\ B-CPI\ A)}}{\mathrm{CPI\ A}}\times 100}}
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Class Exercise}
+    Identify years major events in US history occurred.  
+    \begin{itemize} 
+        \item Are these reflected in the rate of inflation as computed from the CPI chart?  
+        \item Which periods seemed to show the most economic growth? 
+        \item Were there any periods where the economy shrank? 
+        \item How does this line up with the historical context in which they occur?
+    \end{itemize}
+\end{frame}
+
+\section{Calculating Prices}
+\begin{frame}{Calculating Predicted Prices}
+    Recall that the price of an item in two years is assumed to be in proportion to the CPIs of those years.
+    \[
+    \mathrm{Price\ A : Price\ B :: CPI\ A : CPI\ B}
+    \]
+
+\end{frame}
+
+\begin{frame}{Predicted Price Formula}
+    If we assume a standard of saying that year A is the year for which we know the price, and that the price in year B is consistently our unknown, we can derive a formula for computing a price in year B given the year A price and the CPIs of both years.
+    \begin{align*}
+    \uncover<+->{\mathrm{Price\ A : Price\ B} & \mathrm{:: CPI\ A : CPI\ B}\\}
+    \uncover<+->{\mathrm{Price\ B \times CPI\ A} &= \mathrm{Price\ A \times CPI\ B}\\}
+    \uncover<+->{\dfrac{\mathrm{Price\ B \times CPI\ A}}{\mathrm{CPI\ A}} &= \dfrac{\mathrm{Price\ A \times CPI\ B}}{\mathrm{CPI\ A}}\\}
+    \uncover<+->{\dfrac{\mathrm{Price\ B \times \cancel{CPI\ A}}}{\mathrm{\cancel{CPI\ A}}} &= \dfrac{\mathrm{Price\ A\times CPI\ B}}{\mathrm{CPI\ A}}\\}
+    \uncover<+->{\Aboxed{\mathrm{Price\ B} &= \dfrac{\mathrm{CPI\ B}}{\mathrm{CPI\ A}} \times \mathrm{Price\ A}}}
+    \end{align*}
+\end{frame}
+
+\begin{frame}{Class Exercise}
+
+    For each of the following goods, find prices in 1975, 1985, 1995,
+    and 2018.  Compute the rate of inflation in each time period.
+    Compute the percent change in each good.  Did these goods keep
+    pace with inflation.  Why do you think that is?
+
+    \begin{itemize}
+        \item Scientific Calculator
+        \item 1 Gallon of Gasoline
+        \item Ford Mustang
+        \item 1 pound of Ground Chuck
+    \end{itemize}
+\end{frame}
+
+\end{document}
