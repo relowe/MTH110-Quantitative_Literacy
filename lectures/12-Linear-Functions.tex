@@ -1,0 +1,89 @@
+\documentclass{article}
+\title{Graphing and Projection Using Linear Functions}
+\date{October 7, 2019}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\begin{document}
+\maketitle
+
+\section*{Linear Functions}
+\begin{itemize}
+    \item Recall that a linear pattern can be written recursively:
+	\[
+	P_n = P_{n-1} + (P_2 - P_1)
+	\]
+
+    \item Suppose we carry this out for some arbitrary number of iterations:
+    \begin{align*}
+    P_x &= P_{x-1} + (P_2 - P_1) \\
+    P_x &= (P_{x-2} + (P_2 - P_1)) + (P_2 - P_1) \\
+    P_x &= ((P_{x-3} + (P_2 - P_1)) + (P_2 - P_1)) + (P_2 - P_1) \\
+    \ldots &\\
+    P_x &= ((P_1 + \ldots + (P_2 - P_1)) + (P_2 - P_1)) + (P_2 - P_1) \\
+    \end{align*} 
+
+    \item Regrouping by using the associative property of addition, we get:
+    \[
+    P_x = P_1 + (P_2 - P_1) + \ldots + (P_2 - P_1)
+    \]
+    Where $(P_2 - P_1)$ is repeated $x$ times.  
+
+    \item By the definition of multiplication, this gives us :
+    \[
+    P_x = P_1 + x(P_2 - P_1)
+    \]
+
+    \item Moreover, because each iteration increases $n$ by 1, we can make the
+    claim that $P_2 - P_1$ is the slope because:
+    \[
+        m = \displaystyle\frac{y_2 - y_1} {x_2 - x_1}
+    \]
+
+    \item This gives us:
+    \[
+    P_x = P_1 + xm
+    \]
+
+    \item If we want to standardize the starting point to be where $x=0$ on
+        a cartesian plane, we can do this as:
+        \[
+        P_x = b + xm
+        \]
+        Where $b=P_0$.
+    \item This gives us the familiar equation of a line:
+        \[
+        \boxed{y = mx + b}
+        \]
+
+    \item Of course, $b$ is rarely given to us, so we must solve for this:
+        \begin{align*}
+            y &= mx + b\\
+            y - b &= mx \\
+            -b &= mx - y \\
+            b &= -mx + y \\
+        \end{align*}
+        Therefore:
+        \[
+            \boxed{b = y - mx}
+        \]
+    \item We find $b$ by substituting an arbitrary $(x,y)$ pair into the above.
+    \item Thus we can write a linear pattern as a function:
+    \[
+        \boxed{f(x) = mx + b}
+    \]
+\end{itemize}
+
+\section*{Graphing Linear Funcions}
+\begin{itemize}
+    \item To graph a linear function, simply choose two points and draw them on
+        the graph.
+    \item Draw a straight line through both points.
+    \item This will project the linear function backwards and forewards.
+    \item We can also make predictions based on the numeric value of the linear
+        function.
+    \item Also, we can use a spreadsheet to find the equation of a line from
+        a data series by using the ``trendline'' feature.
+\end{itemize}
+
+\end{document}
