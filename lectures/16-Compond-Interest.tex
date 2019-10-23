@@ -1,0 +1,66 @@
+\documentclass{article}
+\title{Compound Interest}
+\date{October 23, 2019}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{textcomp}
+
+\begin{document}
+\maketitle
+\section{Compound Interest}
+\begin{itemize}
+    \item Most investments and loans use compound interest.
+    \item In compound interest, interest is added to the principal
+        of the loan after each compounding period.
+    \item Example:  Suppose you borrow \$100.00 at 5\% interest
+        compounded annually. If you pay nothing on this loan, how much
+        will you owe after 5 years?
+    \item What kind of growth is this?
+    \item What is the effective interest rate over the life of the
+        loan?
+\end{itemize}
+
+\section{Compound Interest Formula}
+\begin{itemize}
+    \item A compound interest transaction always has three parameters:
+    \begin{enumerate} 
+        \item $P_0$ - The principal amount of the transaction.
+        \item $r$ - The annual percentage rate (APR) of the
+            transaction.
+        \item $k$ - The number of compounding periods per year
+    \end{enumerate}
+
+    \item To find a formula for the value of a compound interest
+        transaction for a given number of compounding periods $t$ we 
+        can apply the exponential growth formula:
+        \[
+            P_n = P_0(1+r)^n
+        \]
+    \item Typically, we view the life a loan in years and so we want
+        to adjust this to allow us to calculate years.  Really, what
+        the above computes is compound interest if we compound exactly
+        once per year.  
+    \item If we compound $k$ times per year, the effective rate of
+        each period becomes $\frac{r}{k}$.
+    \item If we compound $k$ periods over $N$ years, we have $Nk$
+        compounding periods.
+    \item Putting this all together gives us the yearly compound
+        interest formula:
+        \[
+            P_N = P_0\left(1+\displaystyle\frac{r}{k}\right)^{Nk}
+        \]
+        Where the variables are:
+        \begin{itemize}
+            \item $P_0$ - Principal
+            \item $r$ - Annual Percentage Rate
+            \item $k$ - The Number of Compound Periods per Year
+            \item $N$ - The Number of Years
+        \end{itemize}
+    \item Let's go online and shop for credit cards.  Each row of the
+        class will pick a card and find its terms.  Then let's compute how
+        much the balance on this card would be after the purchase of
+        a Nintendo\texttrademark Switch and make no payments for 2 years.
+\end{itemize}
+
+
+\end{document}
