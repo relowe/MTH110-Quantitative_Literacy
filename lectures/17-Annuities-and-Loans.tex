@@ -1,0 +1,107 @@
+\documentclass{article}
+\title{Annuities an Loans}
+\date{October 25, 2019}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage{fullpage}
+
+\begin{document}
+\maketitle
+
+%\begin{multicols*}{2}
+\section{Annuities}
+\begin{itemize}
+    \item The compound interest formula assumes that we will deposit
+        or borrow money and then never make payments or further deposits.
+    \item Most of us cannot do this!
+    \item A compound interest account into which we deposit regularly
+        is called an \textbf{annuity}.
+    \item Example annuities are savings accounts, retirement accounts
+        (such as a 401k), and IRAs.
+    \item Recall that the recursive formula for compound interest is:
+        \[
+            P_m = \left(1+\dfrac{r}{k}\right) P_{m-1}
+        \]
+    \item If, in addition to interest, we make a monthly deposit of
+        $d$, this becomes:
+        \[
+            P_m = \left(1+\dfrac{r}{k}\right) P_{m-1} + d
+        \]
+    \item Suppose I deposit \$100.00 each month into a savings account
+        which has 2.02\% APY (Annual Percentage Yield) compounded
+        monthly.  Use the recursive formula to find the amount in the
+        account over the first 3 months.
+    \item Solving this recursive formula in the general case gives us
+        the explicit annuity formula:
+        \[
+            P_N = \dfrac{d\left(\left(1+\dfrac{r}{k}\right)^{Nk} - 1 \right)}%
+                        {\left(\dfrac{r}{k}\right)}
+        \]
+        Where:
+        \begin{description}
+            \item[$N$] - Number of Years
+            \item[$k$] - Compounding Periods per Year
+            \item[$d$] - Deposit per compounding period
+            \item[$r$] - APY or APR
+        \end{description}
+
+    \item In my above scheme, how much will I have in my savings
+        account after 10 years?
+\end{itemize}
+
+\section{Payout Annuities}
+\begin{itemize}
+    \item A payout annuity is one in which we make a regular monthly
+        withdrawal of $d$.
+    \item For instance, suppose we retire.  We stop paying into our
+        retirement account, and it becomes a payout annuity.
+    \item The formula for a payout annuity is as follows:
+    \[
+            P_0 = \dfrac{d\left(1-\left(1+\dfrac{r}{k}\right)^{-Nk} \right)}%
+                        {\left(\dfrac{r}{k}\right)}
+    \]
+    Where $P_0$ is our starting balance.
+
+    \item Suppose our retirement goal is to have a retirement income
+        of \$50,000.00 per year.  Assuming our retirement account
+        earns 6\% interest, we retire at 65, and we die at age 80, how
+        much must we have in our account when we retire?
+
+    \item Assuming we begin saving for retirement at age 22, how much
+        must we save each month to reach our goal?
+\end{itemize}
+
+\section{Compound Interest Loans}
+\begin{itemize}
+    \item A compound interest loan is effectively a payout annuity, so
+        it uses the same formula.
+    \item The payout annuity formula also tells us the remaining
+        balance in a loan, if we know the monthly payment.
+    \item The deposits are your payment.  Solving the annuity formula
+        for d, we can work out the payment for the loan:
+        \[
+        d = \dfrac{\left(\dfrac{r}{k}\right) P_0}%
+                  {\left(1-\left(1+\dfrac{r}{k}\right)^{-Nk} \right)}
+        \]
+    \item The amortization schedule of a loan is the listing of how
+        much interest is paid each payment period and how much
+        principal remains.
+    \item The full amortization of a loan tells us how much money
+        will actually be repaid over the course of a loan.
+    \item The difference between the value of the purchased asset
+        and the remaining principal of the loan is called the
+        \textbf{equity} of the asset.  Generally, only real-estate gains
+        equity.
+    \item Suppose we purchase a home at \$100,000.00 with a down
+        payment of \$10,000.00 and finance the rest with a fixed-rate
+        30 year mortgage at 5\% interest.  The loan compounds monthly.
+        What will our monthly payment be?
+    \item How much, in total, will we have paid for this house at the
+        end of our loan period?
+\end{itemize}
+%\end{multicols*}
+
+
+\end{document}
