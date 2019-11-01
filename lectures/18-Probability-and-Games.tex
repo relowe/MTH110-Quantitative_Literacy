@@ -1,0 +1,142 @@
+\documentclass{article}
+\title{Probabilities and Games}
+\date{November 1, 2019}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage{fullpage}
+\usepackage{ifsym}
+\usepackage{epsdice}
+
+\begin{document}
+\maketitle
+
+\section{Probability}
+\begin{itemize}
+    \item Probability is a way to measure the likelihood of a random
+        event.
+    \item We start with a set of events, $E$.  For instance, for
+        rolling a standard six sided die:
+        $E=\{\epsdice{1}, \epsdice{2}, \epsdice{3}, \epsdice{4},
+        \epsdice{5}, \epsdice{6}\}$
+
+    \item The probability of any event $e$ in $E$ is computed by:
+    \[
+        P(e) = \dfrac{\textrm{number of occurrences}}
+                     {\textrm{number of trials}}
+    \]
+
+    \item We often express probabilities as ratios, decimals, or
+        percents.
+    \item The probability of every event in a set of outcomes is
+        called the probability distribution of the set.
+    \item If each outcome is equally likely, we call the distribution a uniform
+        probability distribution.
+    \item The dice example is a uniform distribution, with each number
+        having a 1/6 probability of occurring.
+    \item The sum of all the probabilities in a distribution is always
+        1. Why?
+\end{itemize}
+
+\section{The Game of Craps}
+\begin{center}
+{\Large
+\begin{tabular} {c|c|c|c|c|c|c|}
+    \multicolumn{1}{c}{} & 
+    \multicolumn{1}{c}{\epsdice{1}} & 
+    \multicolumn{1}{c}{\epsdice{2}} & 
+    \multicolumn{1}{c}{\epsdice{3}} & 
+    \multicolumn{1}{c}{\epsdice{4}} &
+    \multicolumn{1}{c}{\epsdice{5}} & 
+    \multicolumn{1}{c}{\epsdice{6}} \\
+    \cline{2-7}
+    \epsdice[black]{1} & 2 & 3 & 4 & 5 & 6 & 7\\
+    \cline{2-7}
+    \epsdice[black]{2} & 3 & 4 & 5 & 6 & 7 & 8\\
+    \cline{2-7}
+    \epsdice[black]{3} & 4 & 5 & 6 & 7 & 8 & 9\\
+    \cline{2-7}
+    \epsdice[black]{4} & 5 & 6 & 7 & 8 & 9 & 10\\
+    \cline{2-7}
+    \epsdice[black]{5} & 6 & 7 & 8 & 9 & 10 & 11\\
+    \cline{2-7}
+    \epsdice[black]{6} & 7 & 8 & 9 & 10 & 11 & 12\\
+    \cline{2-7}
+\end{tabular}
+}
+\end{center}
+
+\begin{itemize}
+    \item Craps is played with a pair of dice.
+    \item There is a designated shooter who rolls the dice.
+    \item The shooter will have one of two outcomes ``Pass'' (win) or
+        ``Don't Pass'' (lose).
+    \item The other players bet on the outcome. (There are other bets
+        in casino play, but we will focus on the simple win/lose outcomes.)
+    \item Each round consists of two phases, the come-out roll and the
+        point phase.
+\end{itemize}
+
+\subsection{Come-Out Roll}
+\begin{itemize}
+    \item The shooter rolls the dice once.
+    \item A roll of 7 or 11 is a ``natural'' and the pass
+        line wins.
+    \item A roll of 2, 3, or 12 is ``crapping out'' and the don't
+        pass line wins.
+    \item Any other roll sets the point value.  The dealer marks the
+        value of the roll, and then play proceeds to the point phase.
+\end{itemize}
+
+\subsection{Point Phase}
+\begin{itemize}
+    \item The shooter rolls the dice.
+    \item If the shooter rolls the point value established in the
+        come-out roll (``hit''), the ``pass'' line wins and the round ends.
+    \item If the shooter rolls a 7 (``seven-out''), the ``don't pass'' line wins and
+        the round ends.
+    \item If the shooter rolls any other number, the point phase
+        continues and they roll again.
+\end{itemize}
+
+\subsection{Exercises}
+\begin{enumerate}
+    \item What is the probability of rolling a natural?
+    \item What is the probability of crapping out?
+    \item What is the probability of proceeding to the point phase?
+    \item What is the probability of a seven-out?
+    \item What is the probability of hitting each of the possible
+        point values?
+    \item In groups of three, play a few rounds of craps.  Log the
+        outcome of each game. Do your observations match your
+        predictions?
+    \item Do the following names of the craps rolls make sense?
+\begin{center}
+{\large
+\begin{tabular} {l|l|l|l|l|l|l|}
+    \multicolumn{1}{c}{} & 
+    \multicolumn{1}{c}{\epsdice{1}} & 
+    \multicolumn{1}{c}{\epsdice{2}} & 
+    \multicolumn{1}{c}{\epsdice{3}} & 
+    \multicolumn{1}{c}{\epsdice{4}} &
+    \multicolumn{1}{c}{\epsdice{5}} & 
+    \multicolumn{1}{c}{\epsdice{6}} \\
+    \cline{2-7}
+    \epsdice[black]{1} & Snake Eyes &  & &  &  & \\
+    \cline{2-7}
+    \epsdice[black]{2} & Ace Deuce & Hard Four &  &  &  & \\
+    \cline{2-7}
+    \epsdice[black]{3} & Easy Four & Fever Five & Hard Six &  &  & \\
+    \cline{2-7}
+    \epsdice[black]{4} & Fever Five & Easy Six & Natural & Hard Eight &  & \\
+    \cline{2-7}
+    \epsdice[black]{5} & Easy Six & Natural & Easy Eight & Nina & Hard Ten & \\
+    \cline{2-7}
+    \epsdice[black]{6} & Natural & Easy Eight & Nina & Easy Ten & Yo-leven & Boxcars or Midnight\\
+    \cline{2-7}
+\end{tabular}
+}
+\end{center}
+\end{enumerate}
+\end{document}
