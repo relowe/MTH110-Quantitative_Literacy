@@ -1,0 +1,72 @@
+\documentclass{article}
+\title{Probabilities and Games}
+\date{November 11, 2019}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage{fullpage}
+
+\begin{document}
+\maketitle
+
+\section{Describing Data}
+\begin{itemize}
+    \item \textbf{Statistics} are metrics which are used to summarize data.
+    \item Statistics can also be used to make predictions about data.
+    \item When describing data, what we are interested in is:
+    \begin{itemize}
+        \item How are data distributed?
+        \item What is the center of the distribution?
+        \item What does a typical example look like?
+        \item How spread out are the data?
+        \item How do different distributions of data compare to each other?
+    \end{itemize}
+    \item For example, let's suppose you want to explore the Exam 2 scores of the 
+        Spring 2019 and Fall 2019 sections of Quantitative Literacy.
+        \begin{itemize}
+            \item \textbf{Spring 2019 Scores}
+            \newline\begin{tabular}{rrrrrrrrrr}
+            18 & 27 & 27 & 34 & 36 & 36 & 43 & 50 & 57 & 59\\
+            59 & 64 & 64 & 68 & 73 & 73 & 73 & 75 & 80 & 82\\
+            84 & 100\\
+            \end{tabular}
+
+            \item \textbf{Fall 2019 Scores}
+            \newline\begin{tabular}{rrrrrrrrrr}
+            57 & 58 & 62 & 68 & 69 & 74 & 83 & 85 & 88 & 89 \\
+            93 & 93 & 94 & 97 & 97 & 99 & 100 & 102 & 103 & 106\\
+            106 \\
+            \end{tabular}
+        \end{itemize}
+    \item Which section did better?
+    \item How can we quantify who did better?
+\end{itemize}
+
+\section{Describing data Graphically}
+\begin{itemize}
+    \item One easy way to summarize data is graphically.
+    \item \textbf{Stem and Leaf Plots} provide a quick way to summarize data.
+    \item To construct a stem and leaf plot:
+    \begin{enumerate}
+        \item Look at the range of values.
+        \item Write down ``stems'' this is the set of all but the last digits of the data.
+           (for example, in the above data, the stems are the numbers 1-10)
+        \item Beside each stem, write down the leaves (the last digits) of the numbers.
+        \item Sort the leaves from smallest to largest.
+    \end{enumerate}
+    \item Let's make a stem and leaf plot of the Spring and Fall scores.
+    \item What does this tell us?
+    \item If we put the stem and leaf plots back to back, we can compare the distributions of the two.
+    \item A \textbf{histogram} is a bar chart of frequencies.
+    \item To construct a histogram:
+    \begin{enumerate}
+        \item Determine the range of ``bins'' we are going to have.
+        \item Count the number of data elements that fall within each bin.
+        \item Draw a bar chart of these frequencies.
+    \end{enumerate}
+    \item Let's construct a histogram of the Spring and Fall exam data.
+    \item We can compare histograms by placing them back to back.
+    \item What does this tell us?  Where is the center?  What is the distribution of grades like?
+\end{itemize}
+\end{document}
