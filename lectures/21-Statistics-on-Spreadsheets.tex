@@ -1,0 +1,107 @@
+\documentclass{article}
+\title{Statistics on Spreadsheets and Calculators}
+\date{November 18, 2019}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{multicol}
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\begin{document}
+\maketitle
+
+\section{Spreadsheets}
+\begin{itemize}
+\item Spreadsheets provide a fast way to compute statistics.
+\item We typically will enter our cases as a column, maybe with some
+    sort of column heading.
+\item The general ``language'' of spreadsheets is that each row is
+    a case and each column is a variable within that case.
+\end{itemize}
+
+
+\subsection{Calculating the Five Number Summary}
+\begin{itemize}
+\item Label rows beneath the data with the five number summary
+    variables: $min$, $Q_1$, $median$, $Q_3$, $max$
+\item Each of these can be calculated with a spreadsheet function:
+    \begin{itemize}
+    \item \textbf{$min$}  \verb!=min(range)!
+    \item \textbf{$Q_1$}  \verb!=quartile(range, 1)!
+    \item \textbf{$median$}  \verb!=median(range)!
+    \item \textbf{$Q_3$}  \verb!=quartile(range, 3)!
+    \item \textbf{$max$}  \verb!=max(range)!
+    \end{itemize}
+\end{itemize}
+
+\subsection{Calculating Mean and Standard Deviation}
+\begin{itemize}
+\item Label rows beneath the data with $mean$ and $stdev$.
+\item Both are calculated using a functions:
+    \begin{itemize}
+    \item \textbf{Mean}  \verb!=average(range)!
+    \item \textbf{Standard Deviation}  \verb!=stdev(range)!
+    \end{itemize}
+\end{itemize}
+
+\section{Calculator Statistics}
+Most scientific calculators can compute statistics as well.
+
+\subsection{TI-83/84 Plus}
+\begin{enumerate}
+    \item Press [STAT]
+    \item Select \verb!Edit...!
+    \item Enter your data in one of the lists. 
+    \item Press [STAT]
+    \item Select \verb!CALC! from the top.
+    \item Select \verb!1-Var Stats! and press enter
+    \item Press [2nd] and the corresponding \verb!L! for your list.
+        For instance, if you used \verb!L1! press [2nd][1]
+\end{enumerate}
+\begin{itemize}
+    \item Press enter and your calculator will display all the
+        statistics.
+    \item Note that you can use multiple lists, and that you can clear
+        the lists from the the [STAT] mode.
+\end{itemize}
+
+\subsection{TI-30X II}
+\begin{enumerate}
+    \item Press [2nd] [DATA] 
+    \item Select \verb!1-VAR! to enter Statistics Mode
+    \item Press [DATA]
+    \item Enter your values as follows: 
+        \begin{enumerate}
+            \item Enter your value in $X_1=$.
+            \item Press down arrow.
+            \item Enter the number of times this value occurs in
+                $FRQ=$.
+            \item Only enter unique values.
+        \end{enumerate}
+    \item Press [STATVAR] and scroll through the statistics it
+        generates:
+        \begin{description}
+            \item[$n$] -- Number of cases
+            \item[$\bar{x}$] -- Mean
+            \item[$Sx$] -- Sample Standard Deviation
+            \item[$\sigma x$] -- Population Standard Deviation
+            \item[$\Sigma x$] -- Sum of all cases
+            \item[$\Sigma x^2$] -- Sum of the square of all cases
+        \end{description}
+    \item Press [2nd][DATA] right right enter to clear data.
+    \item Press [2nd][STATVAR] to exit statistics mode.
+\end{enumerate}
+
+\subsection{Casio Calculators}
+\begin{enumerate}
+    \item [Mode][.] to enter statistics mode (may vary by model)
+    \item Enter each case, pressing [M+] (or [$\Sigma+$] after each
+        entry.
+    \item Use [Shift] to see variables.  Look for $\bar{x}, \sigma n,
+    \sigma n-1, \Sigma x^2, \Sigma x,$ and $n$.  These are the mean,
+        population standard deviation, sample standard deviation, sum,
+        sum of squares, and number of cases respectively.
+\end{enumerate}
+\end{document}
+
