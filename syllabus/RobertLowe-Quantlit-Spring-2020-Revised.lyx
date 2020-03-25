@@ -1,0 +1,1156 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{longtable}
+
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify Course title, instructor name, semester here %%%%%%%%
+
+
+\title{MTH 110: Quantitative Literacy -- Revised Syllabus}
+\author{Dr. Robert Lowe}
+\date{Spring (March 30 -- May 1), 2020}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\linespread{1.05} % Palatino needs more leading (space between lines)
+\usepackage[mmddyyyy]{datetime}% http://ctan.org/pkg/datetime
+\usepackage{advdate}% http://ctan.org/pkg/advdate
+\newdateformat{syldate}{\twodigit{\THEMONTH}/\twodigit{\THEDAY}}
+\newsavebox{\MONDAY}\savebox{\MONDAY}{Mon}% Mon
+\newcommand{\week}[1]{%
+%  \cleardate{mydate}% Clear date
+% \newdate{mydate}{\the\day}{\the\month}{\the\year}% Store date
+  \paragraph*{\kern-2ex\quad #1, \syldate{\today} - \AdvanceDate[4]\syldate{\today}:}% Set heading  \quad #1
+%  \setbox1=\hbox{\shortdayofweekname{\getdateday{mydate}}{\getdatemonth{mydate}}{\getdateyear{mydate}}}%
+  \ifdim\wd1=\wd\MONDAY
+    \AdvanceDate[7]
+  \else
+    \AdvanceDate[7]
+  \fi%
+}
+\usepackage{setspace}
+\usepackage{multicol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{lastpage}\usepackage{url}
+
+\usepackage{lastpage}
+\usepackage{layout}
+
+
+\lhead{}
+\chead{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Modify header here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\rhead{\footnotesize MTH1100-01 Spring 2020}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't touch this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\usepackage{array}
+\usepackage{xcolor}\usepackage{color}
+\definecolor{clemsonorange}{HTML}{EA6A20}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding T1
+\font_roman "palatino" "default"
+\font_sans "default" "default"
+\font_typewriter "mathpazo" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks false
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle false
+\pdf_quoted_options "colorlinks,breaklinks,linkcolor=clemsonorange,urlcolor=clemsonorange,anchorcolor=clemsonorange,citecolor=black"
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\headheight 3ex
+\headsep 3ex
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+maketitle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+blankline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle" tabularwidth="93text%">
+<column alignment="none" valignment="top" special="@{\extracolsep{\fill}}l">
+<column alignment="right" valignment="top">
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E-mail: 
+\family typewriter
+robert.lowe@maryvillecollege.edu
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Office Phone: N/A
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Office Hours: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Synchronous Hour: M 9:00 – 9:50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MWF 1:00PM – 2:00PM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Office:  Zoom Room (See Blackboard)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TR 3:00PM – 4:00PM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Primary Contact Point: The Tartan
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Syllabus Revisions
+\end_layout
+
+\begin_layout Standard
+Normally, a syllabus cannot be revised in any substantial way.
+ Schedules and activities may adjust, but the overall layout of a course
+ should be settled by the first day of classes.
+ This semester, however, is anything but normal.
+ We are shifting from a traditional in-person class format to an online
+ course for our final few weeks of this semester.
+ As such, this requires a more substantial change to the syllabus.
+ This document contains the revised format of the class.
+ Grading and expectations for the period prior to March 30, 2020 remain
+ in full force.
+ The grading categories will not change, but the requirements to receive
+ credit from this time forward will change.
+ The end result is a hybrid course that met in person for the most of the
+ semester and is now online.
+\end_layout
+
+\begin_layout Standard
+Please read this syllabus carefully.
+ This document specifies how we will proceed for the remainder of the semester.
+ 
+\end_layout
+
+\begin_layout Section*
+Course Description
+\end_layout
+
+\begin_layout Standard
+In a world of accelerating change, productive citizenship and leadership
+ continue to require greater fluency with quantitative information and reasoning.
+ The goals of courses in the quantitative literacy domain are to promote
+ a way of understanding the world that uses data and the quantitative analysis
+ of data to make interpretations, arguments, and conclusions.
+\end_layout
+
+\begin_layout Section*
+Required Materials
+\end_layout
+
+\begin_layout Itemize
+A Scientific Calculator (Graphing Calculators are fine, but no cell phones/table
+ts may be used during exams or quizzes!) 
+\end_layout
+
+\begin_layout Itemize
+Various internet resources and handouts 
+\end_layout
+
+\begin_layout Itemize
+A computer with an internet connection.
+ A webcam is preferable, but is optional.
+\end_layout
+
+\begin_layout Standard
+NOTE: 
+\emph on
+Math and You
+\emph default
+ by Ron Larson is specified as a text for this course.
+ We will only be using this in a limited way (if at all).
+ You can access this text online, for free.
+ You do not need to purchase a copy of this book.
+\end_layout
+
+\begin_layout Section*
+Prerequisites/Corequisites
+\end_layout
+
+\begin_layout Standard
+Math 105 or satisfactory performance on the first year/transfer Mathematics
+ Assessment.
+\end_layout
+
+\begin_layout Section*
+Core Curriculum Information
+\end_layout
+
+\begin_layout Standard
+This course meets the Quantitative Literacy domain requirements in the Core
+ Curriculum; passing this course will fulfill a student's general education
+ requirement in that domain.
+ Accordingly, it addresses a major educational goal of the Core Curriculum,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+proficiency in the use of evidence, empirical data, and quantitative analysis
+\begin_inset Quotes erd
+\end_inset
+
+, by seeking to develop quantitative literacy.
+\end_layout
+
+\begin_layout Standard
+By completing a Quantitative Literacy course, students will demonstrate
+ the ability to: 
+\end_layout
+
+\begin_layout Enumerate
+Interpret quantitative information, arguments, and claims.
+\end_layout
+
+\begin_layout Enumerate
+Formulate logical arguments supported by quantitative evidence.
+\end_layout
+
+\begin_layout Enumerate
+Communicate quantitative information using various mathematical forms (e.g.
+ words, tables, graphs, diagrams, and equations).
+\end_layout
+
+\begin_layout Enumerate
+Solve quantitative problems that arise within the contexts of civic, professiona
+l, and personal life.
+\end_layout
+
+\begin_layout Enumerate
+Draw appropriate conclusions based on quantitative analysis.
+ 
+\end_layout
+
+\begin_layout Section*
+Course Structure
+\end_layout
+
+\begin_layout Subsection*
+Methods of Instruction
+\end_layout
+
+\begin_layout Standard
+This course will meet online for the remainder of this semester.
+ The primary point of contact will be via The Tartan (aka blackboard).
+ In an online course, material is usually split between synchronous and
+ asynchronous modes of instruction.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Synchronous Instruction
+\end_layout
+
+\begin_layout Standard
+Synchronous instruction activities are activities where the entire class
+ meets at the same time and performs the activity together.
+ This is, of course, difficult in an online environment.
+ We will therefore rely more on asynchronous activities, which are outlined
+ in the next section.
+ However, synchronous instruction is needed because it affords you with
+ the best ability to ask questions, and it gives me the best assurance that
+ you are being honest during exams.
+ 
+\series bold
+We will have one weekly synchronous session during our normal class time
+ (9:00 – 9:50) every Monday, beginning April 6.
+
+\series default
+ We will also have a synchronous session for our final exam.
+ These sessions will take place via blackboard collaborate on the Tartan.
+ With the exception of exams, these sessions will likely be shorter than
+ a normal class period.
+ Synchronous activities will include:
+\end_layout
+
+\begin_layout Itemize
+Online Quizzes
+\end_layout
+
+\begin_layout Itemize
+Online Exam 3 (This is the only remaining normal exam.)
+\end_layout
+
+\begin_layout Itemize
+Homework Discussion / General Questions
+\end_layout
+
+\begin_layout Itemize
+The Comprehensive Final Exam
+\end_layout
+
+\begin_layout Subsubsection*
+Asynchronous Instruction
+\end_layout
+
+\begin_layout Standard
+Asynchronous instruction is what makes online learning desirable to so many
+ students! However, it is also the biggest disadvantage.
+ These are course materials which will be posted online, which you can explore
+ at your own pace on your own schedule.
+ That last bit is the key, for if you do not schedule time to actually avail
+ yourself of these things, you will not look at them and you will perform
+ porly on the final portion of the course.
+ My recommendation is to use these during the normal class periods, and
+ to help you along I have strict due dates on completing asynchronous activities.
+ These activities and materials include:
+\end_layout
+
+\begin_layout Itemize
+Brief recorded lectures which will introduce each concept and contain example
+ problems for you to work on your own.
+\end_layout
+
+\begin_layout Itemize
+Online worksheets, used in conjunction with the lectures.
+ (To prove that you watched them.)
+\end_layout
+
+\begin_layout Itemize
+Digital Notes
+\end_layout
+
+\begin_layout Itemize
+Online Homework Assignments
+\end_layout
+
+\begin_layout Itemize
+Online Discussion Boards
+\end_layout
+
+\begin_layout Subsection*
+Technology
+\end_layout
+
+\begin_layout Standard
+Technology will be utilized frequently in this class.
+ It is recommended that you bring a calculator to class each day.
+ It will also be helpful for all students with laptops to bring them to
+ class; Excel and/or Google Sheets will be used as needed.
+ We will also use the following online products to collaborate in this course:
+\end_layout
+
+\begin_layout Itemize
+The Tartan (Blackboard)
+\end_layout
+
+\begin_layout Itemize
+Zoom (for office hours)
+\end_layout
+
+\begin_layout Standard
+A webcam would be nice, but it is not required.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Schedule
+\end_layout
+
+\begin_layout Standard
+This is the tentative schedule for the remainder of our course.
+ There may be some slight modifications to the following according to the
+ needs of the semester.
+ However, the exam dates are fixed, and will be followed.
+ All exam dates are shown in boxes, and it is absolutely vital to your success
+ in this course that you attend the exam days.
+ The final exam period is set by the registrar.
+ Attendance on the date of the final exam is absolutely mandatory; any student
+ failing to appear on this date will receive a failing grade for the course.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "spring2020-schedule-revised.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Grade Calculation
+\end_layout
+
+\begin_layout Standard
+This course is graded using a weighted average among six categories.
+ The assignments within each category are equally weighted and are all graded
+ out of 100 points.
+ Hence your final numeric grade is computed by finding the average of each
+ category, and then multiplying them by the corresponding weight.
+ The weights for each category are as follows:
+\end_layout
+
+\begin_layout Itemize
+Attendance / Online Participation 15% 
+\end_layout
+
+\begin_layout Itemize
+Homework 5% 
+\end_layout
+
+\begin_layout Itemize
+Quizzes 15% 
+\end_layout
+
+\begin_layout Itemize
+Projects 30% 
+\end_layout
+
+\begin_layout Itemize
+Regular Exams 15% 
+\end_layout
+
+\begin_layout Itemize
+Comprehensive Final 20% 
+\end_layout
+
+\begin_layout Standard
+As you complete each assignment, a report of each grade will be given to
+ you.
+ Grades will be tracked on The Tartan
+\end_layout
+
+\begin_layout Standard
+Letter grades will be assigned according to the following scale:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="10">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+96.7–100% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+86.7–90% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+76.7–80% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+66.7–70% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+less than 60 % 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+93.3–96.7% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+83.3–86.7% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+73.3–76.7% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+63.3–66.7% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A- 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+90–93.3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B- 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80–83.3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C- 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+70–73.3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D- 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60–63.3% 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Assessments
+\end_layout
+
+\begin_layout Standard
+The standards of assessment in each grading category will be as follows.
+\end_layout
+
+\begin_layout Subsubsection*
+Attendance / Online Participation 
+\emph on
+(15% of the final grade)
+\end_layout
+
+\begin_layout Standard
+In the beginning of the course, back before Novel Corona Virus ravaged our
+ humble land, in person attendance at all class meetings was mandatory.
+ Now such attendance is, in fact, forbidden.
+ But fear not! This will be replaced by online participation.
+ Each week, you must do the following to receive full credit for that week:
+\end_layout
+
+\begin_layout Itemize
+Participate in online discussion problems 
+\emph on
+(10 points)
+\end_layout
+
+\begin_layout Itemize
+Attend the synchronous session either by webcam/chat, and participate in
+ the synchronous activity 
+\emph on
+(10 points)
+\end_layout
+
+\begin_layout Itemize
+Watch all videos, read material from the textbook, and complete the worksheets
+ accompanying each 
+\emph on
+(20 points)
+\end_layout
+
+\begin_layout Standard
+For the online discussion problems, a few will be given in the discussion
+ boards each week.
+ These will be open ended problems, and you must post at least one post.
+ Your posts must add up to at least 300 words each week.
+ You can also participate in online discussions by asking questions and
+ helping each other on the homework problems.
+\end_layout
+
+\begin_layout Standard
+Each week, a participation grade will be posted.
+ Your score will simply be the percentage of that week's 40 points that
+ you earned.
+\end_layout
+
+\begin_layout Subsubsection*
+Homework 
+\emph on
+(5% of the final grade)
+\end_layout
+
+\begin_layout Standard
+For the remainder of the course, homework will be online.
+ An assignment will be posted on Mondays, and it will be due by 11:59 PM
+ on the following Monday.
+ Your homework will be graded automatically, and you will have an unlimited
+ number of attempts.
+ You are encouraged to help each other on the homework problems, and in
+ fact this will be the main topic of discussion during our synchronous sessions.
+\end_layout
+
+\begin_layout Standard
+Entering an answer for each problem will earn you 1 point.
+ The remainder of the homework grade will require correct answers.
+ For the purposes of your participation grade, you need only attempt each
+ problem.
+ Correctness will only count in the homework section of your grade.
+\end_layout
+
+\begin_layout Subsubsection*
+Quizzes 
+\emph on
+(15% of the final grade)
+\end_layout
+
+\begin_layout Standard
+Weekly quizzes will be given at the beginning of our synchronous sessions.
+ As was the case with the course as it was taught in more innocent times,
+ these will be multiple choice exams.
+ Your quizzes will be graded automatically by the magical elves which inhabit
+ the computer on which the tartan is hosted.
+ You will have one attempt, no discussion will be allowed during the quiz,
+ and there will be a strict 15 minute time limit.
+ Completing the quiz will earn your points for participation in the synchronous
+ session, and correctness will only count in the quiz section of the course
+ grade.
+\end_layout
+
+\begin_layout Subsubsection*
+Projects 
+\emph on
+(30% of the final grade)
+\end_layout
+
+\begin_layout Standard
+We have already completed our first two projects.
+ Those grades will stand as written.
+ There will be a third project, which will be submitted electronically via
+ Tartan drop box.
+\end_layout
+
+\begin_layout Subsubsection*
+Regular Exams 
+\emph on
+(15% of the final grade)
+\end_layout
+
+\begin_layout Standard
+We have already completed our first two exams.
+ Those grades will stand as written.
+ We have one remaining exam, and its date is listed in the course schedule.
+ This will be given during a synchronous session.
+ You will have a one hour time limit, and the exam must be completed during
+ the assigned period.
+ No discussion or outside help will be allowed during the exam.
+\end_layout
+
+\begin_layout Subsubsection*
+Comprehensive Final 
+\emph on
+(20% of the final grade)
+\end_layout
+
+\begin_layout Standard
+The comprehensive final exam will be given as a synchronous session on the
+ day and time specified by the registrar (which is listed in the course
+ schedule in this syllabus).
+ This exam will cover all of the material for the semester.
+ Except in extreme circumstances, the final exam date shall be immovable.
+ The final exam is mandatory, failure to participate on the day of the final
+ exam will result in a failing grade for the course.
+ The exam will be administered online with a two hour time limit.
+ No discussion or outside help will be allowed during the exam.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Course Policies
+\end_layout
+
+\begin_layout Subsection*
+Late Policy
+\end_layout
+
+\begin_layout Standard
+No late work will be accepted under any circumstances (except as mercy and
+ decency may dictate in extremely rare events).
+\end_layout
+
+\begin_layout Subsection*
+Extra Credit
+\end_layout
+
+\begin_layout Standard
+No extra credit will be given under any circumstances.
+\end_layout
+
+\begin_layout Subsection*
+Excused Absences
+\end_layout
+
+\begin_layout Standard
+In some cases, lack of online participation may be excused.
+ Please contact me individually as needed, and we will work out what we
+ have to do for you to make up a missed activity.
+\end_layout
+
+\begin_layout Subsection*
+Communication and Extra Help
+\end_layout
+
+\begin_layout Standard
+You are always welcome at office hours for help with any questions you may
+ have about the course.
+ You can also contact me by email, but often I can better help you via live
+ chat.
+ Note that I do not typically respond to email between 5 p.m.
+ and 8 a.m.
+ You may make appointments to see me at other times if your schedule does
+ not permit you to attend my office hours.
+\end_layout
+
+\begin_layout Standard
+Another way to get help is via our online discussion boards on the Tartan.
+\end_layout
+
+\begin_layout Subsection*
+Plagiarism and Cheating
+\end_layout
+
+\begin_layout Standard
+You are expected to do your own work.
+ Never submit work of others, never give unauthorized assistance to others,
+ do not use unauthorized aids during exams and do not ask for help from
+ other faculty members without the approval of your professor.
+ Plagiarism and cheating are serious offenses that will not be tolerated.
+ Explanations regarding these offenses and how they are handled can be found
+ in the MC Student Handbook at
+\begin_inset Newline newline
+\end_inset
+
+https://www.maryvillecollege.edu/academics/catalog/handbook/section-nine/.
+\begin_inset Newline newline
+\end_inset
+
+You are expected to have read and understand these policies.
+ Offenses on specific assignments, quizzes, or exams will result in a score
+ of 0 on the relevant assignment, and a letter of censure will be placed
+ in your college file.
+ Repeat offenses will result in further disciplinary action, including the
+ possibility of failing the course.
+\end_layout
+
+\begin_layout Subsection*
+Students with Disabilities
+\end_layout
+
+\begin_layout Standard
+Any student who feels s/he may need learning or physical accommodation(s)
+ based on the impact of a disability should contact Services for Students
+ with Disabilities to discuss your specific needs.
+ Please contact 981-8124 to coordinate reasonable accommodations for students
+ with documented disabilities.
+ The Disability Services office is located in the Learning Center in the
+ basement of Thaw Hall.
+ Undocumented disabilities will not be accommodated.
+\end_layout
+
+\end_body
+\end_document
